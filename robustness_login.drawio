@@ -35,11 +35,22 @@
         <mxCell id="s3VlWv3Hlvv5cXVWD9g--7" value="ログイン&lt;br&gt;完了画面" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="297" y="278" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="s3VlWv3Hlvv5cXVWD9g--8" value="ユーザID&lt;br&gt;パスワード入力" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="148" y="146" width="130" height="50" as="geometry" />
+        <mxCell id="s3VlWv3Hlvv5cXVWD9g--8" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;ユーザID&lt;br&gt;パスワード入力&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="163" y="146" width="102" height="50" as="geometry" />
         </mxCell>
         <mxCell id="s3VlWv3Hlvv5cXVWD9g--13" value="訪問者情報" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="644" y="167" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s3VlWv3Hlvv5cXVWD9g--17" value="一致しない場合&lt;br&gt;エラーメッセージ" style="html=1;verticalAlign=bottom;endArrow=block;curved=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0.207;exitY=0.194;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="490.74" y="169.51999999999998" as="sourcePoint" />
+            <mxPoint x="131" y="167" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="425" y="135" />
+              <mxPoint x="309" y="125" />
+              <mxPoint x="207" y="135" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
