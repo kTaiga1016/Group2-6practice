@@ -1,0 +1,25 @@
+@startuml Web論文システム-入学手続シーケンス図
+hide footbox
+skinparam boundaryBackgroundColor #D5E8D4
+skinparam controlBackgroundColor  #F8CECC
+skinparam entityBackgroundColor   #DAE8FC
+
+actor 訪問者 as A
+boundary ログイン画面 as B1
+boundary ログイン完了画面 as B3
+control 訪問者情報一致確認 as C1
+
+A -> B1: ユーザID、パスワードを入力、送信()
+activate B1
+
+B1 -> C1: 入力内容を検証()
+activate C1
+
+opt 入力内容にエラーあり
+    C1 -> B1: エラーメッセージ表示()
+    ...以下、再度入力して送信...
+end
+C1 -> B3: ログイン完了画面表示()
+activate B3
+
+@enduml
