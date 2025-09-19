@@ -1,0 +1,30 @@
+@startuml
+title 図書館システム
+
+left to right direction
+
+actor "利用者\n(学生/職員)" as User
+actor "職員" as Staff
+
+rectangle "図書館システム" {
+  component "貸出予約" as Reservation
+  component "貸出返却" as Circulation
+  component "履歴参照" as History
+  component "メール" as Mail
+  database "DB" as DB
+}
+
+User -down-> Reservation : 予約
+User -down-> Circulation : 借/返
+Staff -down-> Reservation : 受付
+Staff -down-> Circulation : 処理
+Staff -down-> History : 履歴
+
+Reservation -down-> DB
+Circulation -down-> DB
+History -down-> DB
+Reservation -down-> Mail : 利用者にメール
+
+@enduml
+
+
